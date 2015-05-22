@@ -129,8 +129,8 @@
 		edit={ bottom=65;right=307;left=48;multiline=1;top=38;z=1;text="";edge=1;cls="edit" }
 		)
 		/*}}*/	
-		winform.edit.oncommand = function(id,event){	
-		    if(  event == 0x300/*_EN_CHANGE*/ ){ 	    
+		winform.edit.oncommand = function(id,event){
+		    if(  event == 0x300/*_EN_CHANGE*/ ){//一旦内容有变化
 		        var text = winform.edit.text;
 		        var text2 = string.replace(  text,"[^0-9A-F ]","");	        
 		        if( text2 != text ){	        
